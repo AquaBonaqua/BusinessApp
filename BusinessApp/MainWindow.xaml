@@ -1,0 +1,53 @@
+﻿<Controls:MetroWindow  x:Class="BusinessApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:BusinessApp"
+        mc:Ignorable="d"
+        Title="MyBusiness" Height="700" Width="1150" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="478*"/>
+            <RowDefinition Height="43*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+
+            <StackPanel Name="Image"  Orientation="Horizontal">
+                <Image Source="Images/template.png" />
+            </StackPanel>
+
+            <Label FontSize="25" FontWeight="Bold" VerticalAlignment="Center" Margin="20 0 0 0" Foreground="#FF707070" >Contact of business partner</Label>
+            
+
+        </StackPanel>
+        
+            
+       
+
+        <StackPanel  Height="3" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Grid.Row="0" />
+
+        
+
+
+
+        <StackPanel  Grid.Row="2" HorizontalAlignment="Left" Orientation="Horizontal" Width="245" >
+            <Label  FontSize="20">Time of Moscow:</Label>
+            <Label  Name="Time" Background="Red" Foreground="White" FontSize="25">00:00</Label>
+        </StackPanel>
+
+        <StackPanel  Grid.Row="2" HorizontalAlignment="Right" Orientation="Horizontal" Width="482"  >
+            <Button FontSize="15" Click="Button_Click">Set time zone</Button>
+            <ComboBox Margin="10 0 0 0" Name="id"  Width="120" SelectionChanged="id_SelectionChanged"/>
+
+            <Label   FontSize="23">Time of zone:</Label>
+            <Label  Name="Time2" Background="Red" Foreground="White" FontSize="25">00:00</Label>
+        </StackPanel>
+        <Frame Name="MyFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
+    </Grid>
+</Controls:MetroWindow>

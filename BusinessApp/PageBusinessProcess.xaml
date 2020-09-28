@@ -1,0 +1,19 @@
+﻿<Page x:Class="BusinessApp.PageBusinessProcess"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BusinessApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="470" d:DesignWidth="1100"
+      Title="PageBusinessProcess">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Button  Width="200" Height="50">Add team developer</Button>
+            <Button Margin="10" Width="200" Height="50">Select people</Button>
+            <Button Width="200" Height="50" Click="Button_Click_1">Authorization</Button>
+        </StackPanel>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="30" Width="200" Height="50" Click="Button_Click">Back</Button>
+    </Grid>
+</Page>
